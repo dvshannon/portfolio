@@ -1,3 +1,4 @@
 # Portfolio by Deyon Shannon
-Styled using Sass
-https://dvshannon.github.io/portfolio/
+Styled using the Sass preprocessor
+
+[Link to portfolio page](https://dvshannon.github.io/portfolio/)
