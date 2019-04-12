@@ -1,0 +1,39 @@
+body {
+  background-image: url("../../assets/images/cacti-close.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.brand {
+  height: 100vh;
+  top: 50%;
+  color: #fff;
+}
+
+.linked-hub {
+  display: inline-block;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.projects .grid-container {
+    display: grid;
+    align-content: space-evenly;
+}
+.grid-item {
+    grid: 200px / auto auto;
+}
+a {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

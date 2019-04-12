@@ -1,0 +1,38 @@
+$colors: (
+    off-white: #fff
+);
+    
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+body {
+    background-image: url('../../assets/images/cacti-close.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.brand {
+    height: 100vh;
+    top: 50%;
+    color: color(off-white);
+}
+
+.linked-hub {
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
