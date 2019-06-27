@@ -13,7 +13,8 @@ $colors: (
 $queries: (
     phone: "only screen and (max-width : 425px)",
     tablet: "only screen and (max-width : 768px)",
-    computer: "only screen and (max-width : 1024px)"
+    computer: "only screen and (max-width : 1024px)",
+    4k:  "only screen and (min-width : 1024px)"
 );
 
 @function responsive($query-size) {
@@ -31,6 +32,7 @@ body {
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     color: color(off-black);
+    
         #bg {
             clip-path: polygon(0 0, 100% 0, 100% 28%, 100% 49%, 100% 64%, 0 100%, 0 52%, 0 25%);
             background-color: color(overlay);
@@ -42,10 +44,18 @@ body {
         }
 // testing sass media queries
 //         @media #{responsive(phone)} {
-
+//              color: color(mint)
 //         }
 }
 
+.mobile-links {
+    position: fixed;
+    // width: 8%; desktop
+    top: 10px;
+    right: 3px;
+    text-align: center;
+    transition: 0.5;
+}
 .brand {
     height: 100vh;
     width: 80%;
@@ -80,7 +90,12 @@ body {
             position: static;
             padding-top: 10px;
         }
+        @media #{responsive(tablet)} {
+            position: static;
+            padding-top: 10px;
+        }
 }
+
 .projects {
     width: 80%;
     margin: 0 auto;
@@ -89,6 +104,11 @@ body {
     // border: solid 1px color(mint);
     border-radius: 5px;
     font-family: 'Roboto', sans-serif;
+        @media #{responsive(phone)} {
+            width: 60%;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
 }
 a {
     text-decoration: none;

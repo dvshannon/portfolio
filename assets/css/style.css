@@ -25,6 +25,15 @@ body #bg {
   z-index: -1;
 }
 
+.mobile-links {
+  position: fixed;
+  top: 10px;
+  right: 3px;
+  text-align: center;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
 .brand {
   height: 100vh;
   width: 80%;
@@ -68,6 +77,13 @@ body #bg {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #projects-text {
+    position: static;
+    padding-top: 10px;
+  }
+}
+
 .projects {
   width: 80%;
   margin: 0 auto;
@@ -75,6 +91,14 @@ body #bg {
   padding: 5px 30px;
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 425px) {
+  .projects {
+    width: 60%;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
 }
 
 a {
